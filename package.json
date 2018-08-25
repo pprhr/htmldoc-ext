@@ -1,5 +1,5 @@
 {
-  "name": "htmldoc",
+  "name": "htmldoc-ext",
   "version": "1.0.0",
   "description": "Extract html comments.",
   "main": "index.js",

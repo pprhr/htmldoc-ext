@@ -1,9 +1,9 @@
-# htmldoc
+# htmldoc-ext
 
-[![Travis (.org)](https://img.shields.io/travis/pprhr/htmldoc/master.svg)](https://travis-ci.org/pprhr/htmldoc)
+[![Build Status](https://travis-ci.org/pprhr/htmldoc-ext.svg?branch=master)](https://travis-ci.org/pprhr/htmldoc-ext)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Maintainability](https://api.codeclimate.com/v1/badges/df078c4bc3d6e365faad/maintainability)](https://codeclimate.com/github/pprhr/htmldoc/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/df078c4bc3d6e365faad/test_coverage)](https://codeclimate.com/github/pprhr/htmldoc/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/df078c4bc3d6e365faad/maintainability)](https://codeclimate.com/github/pprhr/htmldoc-ext/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/df078c4bc3d6e365faad/test_coverage)](https://codeclimate.com/github/pprhr/htmldoc-ext/test_coverage)
 
 
 ## Usage
@@ -29,9 +29,11 @@ You are free to specify the annotation.
 -->
 ```
 
+<br>
+
 **Single item.**
 ```javascript
-const htmldoc = require('htmldoc')
+const htmldoc = require('htmldoc-ext')
 const targetFile = './index.html'
 
 
@@ -45,9 +47,11 @@ let date = htmldoc.content(targetFile, 'date')
 // -> 2018/08/26
 ```
 
+<br>
+
 **Multiple items.**
 ```javascript
-const htmldoc = require('htmldoc')
+const htmldoc = require('htmldoc-ext')
 const targetFile = './index.html'
 
 
@@ -58,9 +62,11 @@ let list = htmldoc.list(targetFile, 'list', '・')
 // -> ["1111111", "2222222", "3333333"]
 ```
 
+<br>
+
 **Convert to Preferred list style.**
 ```javascript
-const htmldoc = require('htmldoc')
+const htmldoc = require('htmldoc-ext')
 const targetFile = './index.html'
 
 
@@ -73,7 +79,6 @@ let list = htmldoc.list(url, '> ')
 // -> "> 1111111\n> 2222222\n> 3333333"
 
 ```
-
 
 
 ## License
