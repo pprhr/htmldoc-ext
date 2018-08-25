@@ -1,7 +1,9 @@
 # htmldoc
 
-![Travis (.org)](https://img.shields.io/travis/pprhr/htmldoc/master.svg?style=for-the-badge)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Travis (.org)](https://img.shields.io/travis/pprhr/htmldoc/master.svg)](https://travis-ci.org/pprhr/htmldoc)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maintainability](https://api.codeclimate.com/v1/badges/df078c4bc3d6e365faad/maintainability)](https://codeclimate.com/github/pprhr/htmldoc/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/df078c4bc3d6e365faad/test_coverage)](https://codeclimate.com/github/pprhr/htmldoc/test_coverage)
 
 
 ## Usage
