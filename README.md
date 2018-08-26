@@ -12,13 +12,19 @@ Extract annotation content.<br>
 You are free to specify the annotation.
 
 
-**./index.html**
+```javascript
+const htmldoc = require('htmldoc-ext')
+
+
+const filepath = './index.html'
+```
+
 ```html
 <!--
   @description descriptiondescription
            description
            descriptiondescription
-  @note notenotenote
+  @testtest notenotenote
   @date 2018/08/26
   @url
     - https://111.com
@@ -27,60 +33,51 @@ You are free to specify the annotation.
   @name index.html
   @list ・1111111  ・2222222  ・3333333
 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>./index.html</title>
+</head>
+<body>
+
+</body>
+</html>
 ```
 
-<br>
-
-**Single item.**
+**Single item**
 ```javascript
-const htmldoc = require('htmldoc-ext')
-const targetFile = './index.html'
-
-
-let note = htmldoc.content(targetFile, 'note')
+let test = htmldoc.content(filepath, 'testtest')
 // -> notenotenote
 
-let description = htmldoc.content(targetFile, 'description')
+let description = htmldoc.content(filepath, 'description')
 // -> descriptiondescription\ndescription\ndescriptiondescription
 
-let date = htmldoc.content(targetFile, 'date')
+let date = htmldoc.content(filepath, 'date')
 // -> 2018/08/26
 ```
 
-<br>
-
-**Multiple items.**
+**Multiple items**
 ```javascript
-const htmldoc = require('htmldoc-ext')
-const targetFile = './index.html'
-
-
-let url = htmldoc.list(targetFile, 'url')
+let url = htmldoc.list(filepath, 'url')
 // -> ["https://111.com", "https://222.com", "https://333.com"]
 
-let list = htmldoc.list(targetFile, 'list', '・')
+let list = htmldoc.list(filepath, 'list', '・')
 // -> ["1111111", "2222222", "3333333"]
 ```
 
-<br>
-
-**Convert to Preferred list style.**
+**Convert to Preferred list style**
 ```javascript
-const htmldoc = require('htmldoc-ext')
-const targetFile = './index.html'
+let array = ["1111111", "2222222", "3333333"]
 
-
-let url = htmldoc.list(targetFile, 'url')
-
-let list = htmldoc.list(url)
+let circleList = htmldoc.list(array)
 // -> "・1111111\n・2222222\n・3333333"
 
-let list = htmldoc.list(url, '> ')
+let arrowList = htmldoc.list(array, '> ')
 // -> "> 1111111\n> 2222222\n> 3333333"
-
 ```
 
 
 ## License
 
-MIT © [pprhr](https://github.com/pprhr)
+[The MIT License](https://raw.githubusercontent.com/pprhr/htmldoc-ext/master/LICENSE).

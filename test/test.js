@@ -27,7 +27,6 @@ describe('content', function() {
   })
 })
 
-
 describe('list', function() {
   const listFunc = htmldoc.list
 
