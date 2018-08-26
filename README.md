@@ -1,9 +1,9 @@
 # htmldoc-ext
 
+[![npm version](https://badge.fury.io/js/htmldoc-ext.svg)](https://badge.fury.io/js/htmldoc-ext)
 [![Build Status](https://travis-ci.org/pprhr/htmldoc-ext.svg?branch=master)](https://travis-ci.org/pprhr/htmldoc-ext)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintainability](https://api.codeclimate.com/v1/badges/df078c4bc3d6e365faad/maintainability)](https://codeclimate.com/github/pprhr/htmldoc-ext/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/df078c4bc3d6e365faad/test_coverage)](https://codeclimate.com/github/pprhr/htmldoc-ext/test_coverage)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Usage
