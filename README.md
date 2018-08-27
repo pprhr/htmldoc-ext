@@ -70,10 +70,10 @@ let list = htmldoc.list(filepath, 'list', '・')
 ```javascript
 let array = ["1111111", "2222222", "3333333"]
 
-let circleList = htmldoc.list(array)
+let circleList = htmldoc.itemize(array)
 // -> "・1111111\n・2222222\n・3333333"
 
-let arrowList = htmldoc.list(array, '> ')
+let arrowList = htmldoc.itemize(array, '> ')
 // -> "> 1111111\n> 2222222\n> 3333333"
 ```
 
